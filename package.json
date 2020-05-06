@@ -29,8 +29,10 @@
   ],
   "scripts": {
     "build": "haxe build.hxml",
-    "postinstall": "haxelib newrepo && haxelib install --always build.hxml",
     "lint": "eslint .",
+    "prepare": "haxelib newrepo && haxelib install --always build.hxml",
+    "prepublishOnly": "npm run build",
+    "release": "np",
     "test": "tsd && tape test.js | tap-spec"
   },
   "devDependencies": {
