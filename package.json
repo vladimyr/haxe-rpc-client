@@ -22,14 +22,16 @@
     "url": "https://github.com/vladimyr"
   },
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
+    "index.d.ts",
     "lib"
   ],
   "scripts": {
     "build": "haxe build.hxml",
     "postinstall": "haxelib newrepo && haxelib install --always build.hxml",
     "lint": "eslint .",
-    "test": "tape test.js | tap-spec"
+    "test": "tsd && tape test.js | tap-spec"
   },
   "devDependencies": {
     "@vladimyr/eslint-config": "*",
@@ -41,6 +43,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "tap-spec": "^5.0.0",
-    "tape": "^5.0.0"
+    "tape": "^5.0.0",
+    "tsd": "^0.11.0"
   }
 }
