@@ -1,0 +1,19 @@
+# deps
+node_modules
+.haxelib
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# editors
+.idea
+.vscode
+*.sublime-*
+
+# build artifacts
+lib
+
+# general
+.DS_Store

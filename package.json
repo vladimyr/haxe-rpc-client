@@ -1,0 +1,46 @@
+{
+  "name": "haxe-rpc-client",
+  "version": "0.0.0",
+  "description": "Haxe RPC client",
+  "keywords": [
+    "haxe",
+    "remoting",
+    "rpc"
+  ],
+  "homepage": "https://github.com/vladimyr/haxe-rpc-client",
+  "bugs": {
+    "url": "https://github.com/vladimyr/haxe-rpc-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vladimyr/haxe-rpc-client.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Dario Vladovic",
+    "email": "d.vladimyr+dev@gmail.com",
+    "url": "https://github.com/vladimyr"
+  },
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "haxe build.hxml",
+    "postinstall": "haxelib newrepo && haxelib install --always build.hxml",
+    "lint": "eslint .",
+    "test": "tape test.js | tap-spec"
+  },
+  "devDependencies": {
+    "@vladimyr/eslint-config": "*",
+    "eslint": "^6.8.0",
+    "eslint-config-semistandard": "^15.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.0"
+  }
+}

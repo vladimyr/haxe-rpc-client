@@ -1,0 +1,10 @@
+# dependencies
+-lib hxnodejs:12.0.0
+-lib hx3compat:1.0.3
+
+# build options
+--class-path src
+--dce full
+--js lib/RpcClient.js
+-D js-es=6
+RpcClient
